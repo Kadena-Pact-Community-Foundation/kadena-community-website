@@ -8,9 +8,9 @@ const links = [
     description: 'The official documentation for the Pact smart contract language.',
   },
   {
-    title: 'Kadena Developer Portal',
+    title: 'Pact Developer Portal',
     url: 'https://docs.kadena.io/',
-    description: 'The official developer portal for the Kadena platform.',
+    description: 'The official developer portal for the Pact platform.',
   },
   {
     title: 'Foundation Documentation',

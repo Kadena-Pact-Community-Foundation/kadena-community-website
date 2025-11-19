@@ -11,7 +11,7 @@ const DocsHub = () => {
       icon: <Book size={24} color="var(--primary)" />
     },
     { 
-      name: 'Kadena Dev Portal', 
+      name: 'Pact Developer Portal', 
       href: 'https://docs.kadena.io/',
       icon: <Code size={24} color="var(--primary)" />
     },
