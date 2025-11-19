@@ -10,7 +10,6 @@ This repository implements the website that communicates and advances that missi
 
 ## Useful Links
 - Wiki: https://github.com/Pact-Community-Organization/website/wiki
-- Wiki: https://github.com/Pact-Community-Organization/website/wiki
 - GitHub Pages (preview): https://pact-community-organization.github.io/website/
 - Foundation repository (governance, docs, automation): https://github.com/Pact-Community-Organization/foundation
 
