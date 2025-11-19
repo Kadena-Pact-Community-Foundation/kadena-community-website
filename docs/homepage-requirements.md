@@ -1,7 +1,7 @@
 # Homepage Requirements  
 Pact Community Organization — Issue #5
 
-This document defines the required content, visual layout, and measurable KPIs for the homepage of **pact-community.org**. It follows the Foundation’s mission to make it easy and safe for builders and businesses to develop on Kadena using Pact. The homepage must feel familiar to users of kadena.io, while still representing the distinct identity of the Pact Community Organization.
+This document defines the required content, visual layout, and measurable KPIs for the homepage of **pact-community.org**. It follows the Foundation’s mission to make it easy and safe for builders and businesses to develop with Pact. The homepage must feel familiar to users of kadena.io, while still representing the distinct identity of the Pact Community Organization.
 
 This document is written for developers, contributors, designers, and AI agents to ensure clarity, consistency, and long-term maintainability.
 
@@ -13,7 +13,7 @@ The homepage serves as the primary landing experience for all visitors. It shoul
 - Introduce the Foundation clearly and professionally  
 - Direct users to key pathways (Pact learning, smart contracts, community participation)  
 - Communicate our mission and vision concisely  
-- Build trust through visual consistency with Kadena’s ecosystem  
+- Build trust through visual consistency with the Pact ecosystem  
 - Act as the navigation gateway to the entire site  
 
 This page must be lightweight, accessible, clean, and community-friendly.
@@ -29,12 +29,12 @@ This page must be lightweight, accessible, clean, and community-friendly.
   1. **Explore Smart Contracts**  
   2. **Learn Pact**  
   3. **Join the Community**  
-- Background gradient similar to Kadena brand (Foundation theme adaptation)
+- Background gradient similar to Pact brand (Foundation theme adaptation)
 
 ### 2.2 Mission & Vision Summary
 - 1–2 short paragraphs introducing:  
-  - Mission: *Make it easy and safe for businesses to start building on Kadena*  
-  - Vision: *A trusted Kadena ecosystem with safe, audited open source Pact contracts*  
+  - Mission: *Make it easy and safe for businesses to start building with Pact*  
+  - Vision: *A trusted Pact ecosystem with safe, audited open source Pact contracts*  
 - “Read full Mission & Vision →” link
 
 ### 2.3 Smart Contract Catalog Preview
