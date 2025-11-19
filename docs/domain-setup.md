@@ -45,6 +45,8 @@ For apex and `www` to resolve correctly on GitHub Pages:
 
 - `www` CNAME
   - `www  CNAME  kadena-pact-community-foundation.github.io.`
+- `www` CNAME
+  - `www  CNAME  pact-community-organization.github.io.`
 
 Explanation:
 - Apex must use A/AAAA records for GitHub Pages.
