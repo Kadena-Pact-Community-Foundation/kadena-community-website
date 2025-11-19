@@ -19,6 +19,60 @@ We will publish via GitHub Pages from this repository. The exact source (e.g., `
 
 1) In the repository settings, under Pages:
 - Set the publishing source (e.g., `gh-pages` branch or `main`/`docs`).
+<<<<<<< HEAD
+- Set the Custom domain to `pact-community.org`.
+=======
+  - Set the Custom domain to `pact-community.org`.
+>>>>>>> 2d92757 (chore: update domain setup to pact-community.org and pactcommunity.org)
+- Enable “Enforce HTTPS”.
+
+2) Ensure a `CNAME` file exists at the publishing root containing:
+```
+pact-community.org
+```
+GitHub adds this automatically when you set the custom domain in Settings, but keep it tracked in the branch that serves the site.
+
+## DNS Records (Primary: pact-community.org)
+For apex and `www` to resolve correctly on GitHub Pages:
+
+- Apex A records (required)
+  - `@  A  185.199.108.153`
+  - `@  A  185.199.109.153`
+  - `@  A  185.199.110.153`
+  - `@  A  185.199.111.153`
+
+- Apex AAAA records (recommended for IPv6)
+  - `@  AAAA  2606:50c0:8000::153`
+  - `@  AAAA  2606:50c0:8001::153`
+  - `@  AAAA  2606:50c0:8002::153`
+  - `@  AAAA  2606:50c0:8003::153`
+
+Explanation:
+- Apex must use A/AAAA records for GitHub Pages.
+- `www` should use a CNAME pointing to the org’s Pages host `pact-community-organization.github.io`.
+
+````markdown
+# Domain Configuration Plan
+
+This document describes how to configure the Pact Community Organization website domains for GitHub Pages hosting.
+
+Targets:
+- Primary domain: `pact-community.org`
+- Secondary domain (forwarding): `pactcommunity.org`
+
+> Note: Do not include any sensitive credentials. All configuration steps here are safe for public repos.
+
+## Goals
+- Serve the website at `https://pact-community.org` (canonical).
+- Enforce HTTPS and HSTS via GitHub Pages (Enforce HTTPS setting).
+- Forward all traffic from `pactcommunity.org` (apex and www) to the primary domain with permanent redirects (301).
+- Ensure `www.pact-community.org` also resolves to the site.
+
+## GitHub Pages Hosting
+We will publish via GitHub Pages from this repository. The exact source (e.g., `gh-pages` branch or `main`/`docs`) will be chosen with the implementation stack. The domain steps are the same for either source.
+
+1) In the repository settings, under Pages:
+- Set the publishing source (e.g., `gh-pages` branch or `main`/`docs`).
 - Set the Custom domain to `pact-community.org`.
 - Enable “Enforce HTTPS”.
 
@@ -102,4 +156,6 @@ curl -I https://www.pactcommunity.org/
 - Keep the CNAME file in the publishing branch in sync with the chosen primary domain.
 - If the publishing source changes (e.g., `main`/`docs` → `gh-pages`), re-validate that the CNAME file exists in the new source branch.
 - If moving the site to a different org/repo, update the `www` CNAME target accordingly.
+
+````
 
